@@ -1,9 +1,57 @@
-class Mobil(object):
+#class Mobil(object):
 
-	def __init__(self, max_speed, mileage):
-		self.max_speed = max_speed
+#	def __init__(self, max_speed, mileage):
+#		self.max_speed = max_speed
+#		self.mileage = mileage
+		
+#carX = Mobil(240, 18)
+
+#print(f"Kecepatan: {carX.max_speed}, milege: {carX.mileage}")
+
+class Car:
+
+	def __init__(self, maxSpeed=0, mileage=0):
+		self.maxSpeed = maxSpeed
 		self.mileage = mileage
 		
-carX = Mobil(240, 18)
+	def getMaxSpeed(self):
+		return self.maxSpeed
+		
+	def getMileage(self):
+		return self.mileage
 
-print(f"Kecepatan: {carX.max_speed}, milege: {carX.mileage}")
+# second class	
+class Toyota(Car):
+
+	def __init__(self, model=None, color=None):
+		self.model = 'Camry'
+		self.color = 'Silver'
+		
+	def getModel(self):
+		return self.model
+		
+	def getColor(self):
+		return self.color
+
+
+	# decorator
+	@classmethod
+	def getOwner(cls)
+		print('This is the owner...')
+		
+toyo = Toyota("Camry", "Silver")
+
+print(toyo.model)
+
+toyo.maxSpeed = 200
+
+print(toyo.getMaxSpeed())
+		
+	
+# instance class
+#carY = Car(150, 500)
+
+# call property
+#print(f"max speed: {carY.getMaxSpeed()} Kmh")
+
+#print(f"Mileage : {carY.getMileage} Km")
