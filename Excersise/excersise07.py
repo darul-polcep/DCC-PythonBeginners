@@ -72,7 +72,7 @@ print(mieSetan.getRasa())
 		
 mieSetan.nama = "Terigu"
 
-print(mieSetan.bahan)
+print(mieSetan.)
 		
 		
 		
