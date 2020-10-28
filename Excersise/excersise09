@@ -22,11 +22,11 @@ personAndPets = [
 	}
 ]
 
-#for x in personAndPets:
-#	if x['name'] == '':
-#		for p in x['name']:
-#			print(p)	
-
+""""for x in personAndPets:
+	if x['name'] == '':
+		for p in x['name']:
+			print(p)	
+"""
 			
 personAndPets = [
 	{
